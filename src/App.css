@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+.Logo {
+  width: 80px;
+}
+.Nav {
+  height: 70px;
+  background: #090b13;
+  display: flex;
+  align-items: center;
+  padding: 0 36;
+  overflow-x: hidden;
+}
+.LoginContainer {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+.Login {
+  border: 1px solid #f9f9f9;
+  padding: 8px 16px;
+  border-radius: 4px;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  background: rgb(0, 0, 0, 0.6);
+  transition: all 0.2s ease 0s;
+  cursor: pointer;
+}
+.Login :hover {
+  background: #f9f9f9;
+  color: black;
+  border-color: transparent;
+}
+.Navmenu {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  margin-left: 25px;
+}
+.Navmenu div {
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  cursor: pointer;
+}
+.Navmenu div img {
+  height: 20px;
+}
+.Navmenu div:hover span::after {
+  transform: scaleX(1);
+  opacity: 1;
+}
+.Navmenu span {
+  font-size: 13px;
+  letter-spacing: 1.24px;
+  position: relative;
+}
+.Navmenu span::after {
+  content: "";
+  height: 2px;
+  background: white;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -6px;
+  opacity: 0;
+  transform-origin: left-center;
+  transition: all 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+  transform: scaleX(0);
+}
+.Userimg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
