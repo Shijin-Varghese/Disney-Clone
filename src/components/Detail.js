@@ -30,9 +30,9 @@ function Detail() {
       {/* <Header /> */}
       {movie && (
         <>
-          <Background>
+          {/* <Background>
             <img src={movie.backgroundImage} alt="img" />
-          </Background>
+          </Background> */}
           <Imgtitle>
             <img src={movie.titleImg} alt="img" />
           </Imgtitle>
